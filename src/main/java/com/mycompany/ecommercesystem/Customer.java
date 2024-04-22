@@ -1,0 +1,29 @@
+package com.mycompany.ecommercesystem;
+public class Customer {
+    private String  name ;
+    private String address;
+    private int customerId;
+    public Customer(String name, String address, int customerId) {
+        this.name = name;
+        this.address = address;
+        this.customerId =Math.abs(customerId)  ;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    public int getCustomerId() {
+        return customerId;
+    }
+    public void setCustomerId(int customerId) {
+        this.customerId= Math.abs(customerId) ;
+    }
+}
